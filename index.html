@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="organizer">
+      <h3>Информация об организаторе</h3>
+      <form>
+        <label for="name" class="h4">Организатор</label>
+        <br>
+        <input type="text" id="name" class="forms nameOrg" required>
+      </form>
+    </div>
+    <div class="contact-details">
+      <h3>Контактные данные</h3>
+      <form>
+        <div class="contacts">
+          <div>
+            <label for="tel" class="h4">Телефон</label>
+            <br>
+            <input type="tel" class="forms tel" id="tel" name="tel" required>
+          </div>
+          <div>
+            <label for="email" class="h4">E-mail</label>
+            <br>
+            <input type="email" class="forms email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="city" class="h4">Город организатора</label>
+            <br>
+            <input type="text" class="forms city" id="city" required>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="general-information">
+      <h3>Общая информация</h3>
+      <form>
+        <label for="info" class="h4">Название</label>
+        <br>
+        <input type="text" id="info" class="forms info" maxlength="50" required>
+      </form>
+    </div>
+    <h4>Фотография</h4>
+    <div class="photo">
+      <input type="file" id="img-file" hidden="hidden" class="ava" required>
+      <button id="img-btn"><img src="imgs/no_image.jpg" id="photo" class="upload-img"></button>
+<!--      <img src="imgs/1680650630_phonoteka-org-p-chernii-krestik-art-krasivo-7.png" class="cross">-->
+    </div>
+    <div class="detailed-description">
+      <h4>Подробное описание </h4>
+      <textarea class="forms detailed" required></textarea>
+    </div>
+    <div class="time-date">
+      <div class="element">
+        <div class="date">
+          <label class="h4">Дата начала</label>
+          <br>
+          <input type="date" class="forms start-date" required>
+        </div>
+        <div class="time">
+          <label class="h4">Время начала</label>
+          <br>
+          <input type="time" class="forms start-time" required>
+        </div>
+        <div class="date">
+          <label class="h4">Дата окончания</label>
+          <br>
+          <input type="date" class="forms end-date" required>
+        </div>
+        <div class="time">
+          <label class="h4">Время окончания</label>
+          <br>
+          <input type="time" class="forms end-time" required>
+        </div>
+      </div>
+    </div>
+    <button class="forms btn">+ Добавить дату</button>
+    <div class="rating-address">
+      <div class="rating">
+        <label class="h4">Рейтинг мероприятия</label>
+        <br>
+        <input type="text" maxlength="3" class="forms r" required>
+      </div>
+      <div class="address">
+        <label class="h4">Адрес мероприятия</label>
+        <br>
+        <input type="text" class="forms a" required>
+      </div>
+    </div>
+  </div>
+  <div class="cleaning-further">
+      <input type="reset" class="forms clear" id="clear" value="Отменить">
+      <a href="step2.html" class="forms further"><p class="text-a">Далее</p></a>
+  </div>
+<script src="https://unpkg.com/imask"></script>
+<script src="mask.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
